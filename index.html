@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Documentation - KONSTRUCT</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@500&family=Staatliches&family=Tourney:wght@600&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+
+    <div class="wrapper">
+      
+      <header>
+        <div class="header-container">
+          <div class="header-text">
+            <div class="language">
+              <span>ENG</span>
+            </div>
+            <nav class="breadcrumbs">
+              <a href="index.html"><span>DOCUMENTATION</span></a>
+              <span> / </span>
+              <a href="who.html"><span>WHO's USING</span></a>
+            </nav>
+          </div>
+          <div class="logo">
+            <img src="img/company-logo-black.svg" alt="Construct logo">           
+          </div>
+        </div>
+      </header>
+
+      <div class="background-picture">
+        <img src="img/bg-picture.svg" alt="gear icon on the background">
+      </div>
+
+      <nav class="sidebar">
+        <ul>
+          <li><a href="#introduction">INTRODUCTION</a></li>
+          <li><a href="#core-components">CORE COMPONENTS</a></li>
+          <li><a href="#react-fundamentals">REACT FUNDAMENTALS</a></li>
+          <li><a href="#handling-text-input">HANDING TEXT INPUT</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section id="introduction" class="chapter">
+          <div class="divider"></div>
+          <div class="chapter-label">
+            <h2 class="chapter-name">INTRODUCTION</h2>
+            <span class="chapter-number">Chapter 1</span>
+          </div>
+          <p>Welcome to the very start of your React Native journey! If you're looking for environment setup instructions, they've moved to <span class="underlined">their own section</span>. Continue reading for an introduction to the documentation, Native Components, React, and more!</p>
+        </section>
+
+        <section id="core-components" class="chapter">
+          <div class="divider"></div>
+          <div class="chapter-label">
+            <h2 class="chapter-name">CORE COMPONENTS</h2>
+            <span class="chapter-number">Chapter 2</span>
+          </div>
+          <p>
+            React Native is an open source framework for building Android and iOS applications using React and the app platform’s native capabiles. With React Native, you use JavaScript to access your platform’s APIs as well as to describe the appearance and behavior of your UI using React components: <span class="italic">bundles of reusable, nestable code.</span> You can learn more about React in the next section. But first, let’s cover how components work in React Native.
+          </p>
+        </section>
+        
+        <section id="react-fundamentals" class="chapter">
+          <div class="divider"></div>
+          <div class="chapter-label">
+            <h2 class="chapter-name">REACT FUNDAMENTALS</h2>
+            <span class="chapter-number">Chapter 3</span>
+          </div>
+          <p>
+            React Native runs on React, a popular open source library for building user interfaces with JavaScript. To make the most of React Native, it helps to understand React itself. This section can get you started or can serve as a refresher course
+          </p>
+          <p>
+            We’re going to cover the core concepts behind React:
+          </p>
+          <ul>
+            <li>
+              <span class="bold">+ components.</span> The rest of this introduction to React uses cats in its examples: friendly, approachable creatures that need names and a cafe to work in.
+            </li>
+            <li>
+              <span class="bold">+ JSX.</span> React and React Native use JSX, a syntax that lets you write elements inside JavaScript like so:  <span class="highlight">&ltText&gtHello, I am your cat!&lt/Text&gt.</span>
+              <br>
+              The React docs have <span class="underline">a comprehensive guide to JSX</span> you can refer to learn even more. Because JSX is JavaScript, you can use variables inside it. Here you are declaring a <span class="higlight">name</span> for the cat, name, and embedding it with curly braces inside <span class="highlight">&ltText&gt</span>
+            </li>
+            <li>
+              <span class="bold">+ props.</span> Props is short for “properties”.
+            </li>
+            <li>
+              <span class="bold">+ state.</span> While you can think of props as arguments you use to configure how components render, state is like a component’s personal data storage. State is useful for handling data that changes over time or that comes from user interaction. State gives your components memory!
+            </li>
+          </ul>
+        </section>
+
+        <section id="handling-text-input" class="chapter">
+          <div class="divider"></div>
+          <div class="chapter-label">
+            <h2 class="chapter-name">HANDLING TEXT INPUT</h2>
+            <span class="chapter-number">Chapter 3</span>
+          </div>
+          <p>
+            TextInput is a Core Component that allows the user to enter text. It has an onChangeText prop that takes a function to be called every time the text changed, and an onSubmitEditing prop that takes a function to be called when the text is submitted.
+          </p>
+          <p>
+            For example, let's say that as the user types, you're translating their words into a different language. In this new language, every single word is written the same way: 🍕. So the sentence "Hello there Bob" would be translated as "🍕 🍕".
+          </p>
+        </section>
+      </main>
+    </div>
+    
+  </body>
+
+  </html>

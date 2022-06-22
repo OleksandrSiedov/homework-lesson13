@@ -1,0 +1,156 @@
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*Header*/
+header {
+  width: 1200px;
+  height: 80px;
+  padding: 13px 0;
+  position: fixed;
+  background: white;
+  z-index: -1; 
+}
+
+.header-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-text {
+  display: flex;
+}
+
+.logo {
+  justify-self: end;
+  margin-left: 50px;
+}
+
+.logo img {
+  width: 238px;
+  height: 54px;
+}
+
+.language {
+  margin-right: 50px;
+}
+
+.language span {
+  font-family: 'Tourney';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  color: #000000;
+
+}
+
+.breadcrumbs {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: #000000;
+}
+
+/* -------- MAIN CONTENT ----------- */
+
+main {
+  position: absolute;
+  top: 150px;
+  padding-bottom: 70px;
+}
+
+.headind {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.divider {
+  width: 100px;
+  height: 8px;
+  background-color: #000000;
+}
+
+.page-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.gallery {
+  width: 1200px;
+  margin-top: 40px;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #BFBFBF;
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 270px;
+  height: 180px;
+  perspective: 1000px; /*Нужно будет посмотреть нужен ли тут этот эффект?*/
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #E6E6E6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#shopify .flip-card-front {
+  background-color: #1A1A1A;
+}
+
+.flip-card-back {
+  background-color: #1A1A1A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(180deg);
+}
+
+#shopify .flip-card-back {
+  background-color: #E6E6E6;
+}
+
+
+
+

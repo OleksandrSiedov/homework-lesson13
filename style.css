@@ -1,0 +1,182 @@
+body {
+  padding-bottom: 90px;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.background-picture {
+  width: 760px;
+  height: 760px;
+  position: fixed;
+  top: 200px;
+  left: calc(100vw / 2 + 92px);
+  z-index: -1;
+}
+
+/*Header*/
+header {
+  width: 1200px;
+  height: 80px;
+  padding: 13px 0;
+  position: fixed;
+  background: white;
+  z-index: 1; 
+}
+
+.header-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-text {
+  display: flex;
+}
+
+.logo {
+  justify-self: end;
+  margin-left: 50px;
+}
+
+.logo img {
+  width: 238px;
+  height: 54px;
+}
+
+.language {
+  margin-right: 50px;
+}
+
+.language span {
+  font-family: 'Tourney';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  color: #000000;
+
+}
+
+.breadcrumbs {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: #000000;
+}
+
+/* Nav sidebar*/
+
+.sidebar {
+  width: 385px;
+  height: 462px;
+  position: fixed;
+  top: 150px;
+  z-index: 1;
+  /*margin-bottom: -462px*/
+}
+
+/*.sidebar {
+  display: flex;
+  flex-direction: column;
+}*/
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between; /*можно сдеать через марджини для li*/
+}
+
+.sidebar li {
+  border-bottom: 1px solid #BDBDBD;
+  padding: 10px 0;
+}
+
+.sidebar a,
+.sidebar a:link,
+.sidebar a:visited {
+  font-family: 'Francois One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+  cursor: pointer;
+}
+
+/*.sidebar a:hover,
+{
+  color : red;
+}*/ /*Почему эта история не работает?*/
+
+/*Main*/
+
+main {
+  width: 1200px;
+  padding-left: 415px;
+  margin: 0px;
+  position: relative;
+  top: 150px;
+}
+
+.chapter {
+  padding-bottom: 70px;
+}
+
+.chapter-label {
+  display: flex;
+}
+
+.chapter-name {
+  font-family: 'Francois One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+  padding-top: 8px;
+}
+
+.chapter-number {
+  font-family: 'Farro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.divider {
+  width: 100px;
+  height: 8px;
+  background-color: #000000;
+}
+
+main p,
+main ul,
+main li {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.7;
+  color: #000000;
+  margin: 40px 0;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.highlight {
+  background-color: #DADADA;
+}
+
+.underline {
+  text-decoration: underline;
+}
